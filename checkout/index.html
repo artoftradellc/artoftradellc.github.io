@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Art of Trade LLC — Checkout</title>
+<meta name="robots" content="noindex">
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0d0d0d;color:#ece6da;font:16px/1.5 Georgia,'Times New Roman',serif;text-align:center;padding:0 16px}a{color:#ece6da}</style></head>
+<body><main><p style="letter-spacing:.2em;font-size:13px">ART OF TRADE LLC</p><p>Taking you to checkout on Etsy…</p><p><a id="go" href="https://ArtOfTradeLLC.etsy.com">Continue</a></p></main>
+<script>
+var M={"AOT-P01":"4614460187","AOT-P02":"4614466714","AOT-P03":"4614467010","AOT-P04":"4614460471","AOT-P05":"4614467340","AOT-P06":"4614468575","AOT-P07":"4614474430","AOT-P08":"4614471015","AOT-P09":"4614449431","AOT-P10":"4614484764","AOT-P11":"4614471735","AOT-P12":"4614461447","AOT-P13":"4614480440","AOT-P14":"4614467331","AOT-P15":"4614467675","AOT-P16":"4614468001","AOT-P17":"4614468851","AOT-P18":"4614482696","AOT-P19":"4614469721","AOT-P20":"4614470051","AOT-P21":"4614483714","AOT-P22":"4614475421","AOT-P23":"4614468245","AOT-P24":"4614489576","AOT-P25":"4614476463"}, shop="https://ArtOfTradeLLC.etsy.com";
+var p=new URLSearchParams(location.search), raw=p.get("products")||"", ids=[];
+raw.split(",").forEach(function(s){var id=decodeURIComponent(s.split(":")[0]||"").trim(); if(M[id]) ids.push(id);});
+var url=ids.length?shop+"/listing/"+M[ids[0]]:shop;
+var c=p.get("coupon"); if(c) url+=(url.indexOf("?")<0?"?":"&")+"coupon="+encodeURIComponent(c);
+document.getElementById("go").href=url; location.replace(url);
+</script></body></html>
